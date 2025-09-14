@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Adding & Formatting Dialogue – Year 7 Worksheet</title>
+  <meta name="description" content="Interactive worksheet for practising dialogue formatting and punctuation in narrative writing (Year 7)." />
+  <style>
+    :root{
+      --bg:#0b1220; --panel:#0f172a; --muted:#94a3b8; --text:#e5e7eb;
+      --accent:#38bdf8; --ok:#22c55e; --warn:#f59e0b; --danger:#ef4444; --border:#22304a;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;
+      color:var(--text); background:linear-gradient(180deg,#0b1220 0%,#0a0f1c 100%);
+    }
+    header{position:sticky; top:0; backdrop-filter:blur(8px); background:#0b1220cc; border-bottom:1px solid var(--border);}
+    .wrap{max-width:980px; margin:0 auto; padding:18px 16px}
+    h1{margin:0 0 6px; font-size:clamp(1.4rem,2.5vw,2rem)}
+    .toolbar{display:flex; gap:8px; flex-wrap:wrap; align-items:center;}
+    button, .btn{
+      background:var(--panel); border:1px solid var(--border); color:var(--text); padding:10px 14px; border-radius:12px; cursor:pointer;
+    }
+    button:hover{border-color:var(--accent)}
+    main{padding:16px}
+    section{background:var(--panel); border:1px solid var(--border); border-radius:16px; padding:16px; margin:16px auto;}
+    h2{margin-top:0}
+    .rules li{margin:6px 0}
+    textarea, input[type="text"]{
+      width:100%; background:#0b1220; color:var(--text); border:1px solid var(--border); border-radius:12px; padding:10px; font-size:1rem;
+    }
+    .grid{display:grid; gap:12px}
+    .grid-2{grid-template-columns:1fr}
+    @media(min-width:820px){.grid-2{grid-template-columns:120px 1fr}}
+    details{background:#0b1220; border:1px solid var(--border); border-radius:12px; padding:10px 12px}
+    summary{cursor:pointer}
+    .note{color:var(--muted); font-size:.95rem}
+    .badge{display:inline-block; padding:.2rem .5rem; border:1px solid var(--border); border-radius:999px; font-size:.8rem; color:var(--muted)}
+    .flex{display:flex; gap:8px; align-items:center}
+    .small{font-size:.9rem}
+    .ok{color:var(--ok)}
+    .muted{color:var(--muted)}
+    .line{height:1px; background:var(--border); margin:12px 0}
+    .pair{display:grid; grid-template-columns:1fr; gap:8px}
+    @media(min-width:720px){.pair{grid-template-columns:1fr 1fr}}
+    .foot{color:var(--muted); font-size:.85rem; text-align:center; padding:24px}
+    .exchanges{display:grid; gap:8px}
+    .ex-row{display:grid; grid-template-columns:minmax(80px,120px) 1fr; gap:8px; align-items:start}
+    label{color:var(--muted)}
+    .counter{font-weight:600}
+    .example-box{background:#0b1220; border:1px solid var(--border); border-radius:12px; padding:12px; margin-top:8px;}
+    .example-box p{margin:4px 0}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap">
+      <h1>Adding & Formatting Dialogue <span class="badge">Year 7</span></h1>
+      <div class="toolbar" role="toolbar" aria-label="Worksheet actions">
+        <button id="printBtn" title="Print / Save as PDF">🖨️ Print</button>
+        <button id="saveBtn" title="Save your work to this device">💾 Save</button>
+        <button id="loadBtn" title="Load saved work on this device">📂 Load</button>
+        <button id="clearBtn" title="Clear all fields">🧹 Clear</button>
+        <span id="status" class="muted small" aria-live="polite"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="wrap" id="top">
+    <section>
+      <h2>Quick Rules</h2>
+      <ul class="rules">
+        <li><strong>New paragraph</strong> every time a <em>new person</em> speaks.</li>
+        <li>If the <em>same speaker</em> continues, keep it in the same paragraph.</li>
+        <li>Use <strong>quotation marks</strong> around spoken words.</li>
+        <li><strong>Punctuation goes inside</strong> the quotation marks (e.g., commas, full stops, question marks).</li>
+        <li>Use <strong>dialogue tags</strong> (<em>said, asked, replied</em>) or actions to show who is speaking.</li>
+        <li>Make dialogue <strong>develop the story or characters</strong> — not filler.</li>
+      </ul>
+      <p class="note">Tip: Read your dialogue aloud. Does it sound like real people speaking?</p>
+    </section>
+
+    <section id="formattingExamples">
+      <h2>Part A — Formatting Dialogue in Stories</h2>
+      <p>Look at these examples of dialogue inside a narrative. Notice how the dialogue is formatted with quotation marks, punctuation, and new paragraphs.</p>
+      <div class="example-box">
+        <p><strong>Example 1 (Correct):</strong></p>
+        <p>Sam walked into the room and smiled. “Are you ready for the game?” he asked.</p>
+        <p>“I think so,” replied Mia. She adjusted her backpack and added, “But I’m a little nervous.”</p>
+      </div>
+      <div class="example-box">
+        <p><strong>Example 2 (Incorrect):</strong></p>
+        <p>Sam walked into the room and smiled, “Are you ready for the game?” he asked. “I think so,” replied Mia, she adjusted her backpack and added “but I’m a little nervous”.</p>
+      </div>
+      <p>Rewrite the incorrect version in the text box below so that it follows correct dialogue formatting rules:</p>
+      <textarea rows="5" placeholder="Rewrite the incorrect example here..."></textarea>
+    </section>
+
+    <section id="partB">
+      <h2>Part B — Fix the Dialogue</h2>
+      <p>Rewrite each example correctly (capital letters, quotation marks, punctuation, and new lines for new speakers if needed).</p>
+
+      <div class="grid grid-2">
+        <div><label for="a1">1.</label></div>
+        <div><textarea id="a1" rows="2" placeholder="jake said whats your name"></textarea></div>
+        <div><label for="a2">2.</label></div>
+        <div><textarea id="a2" rows="2" placeholder="“I don’t know said sam.”"></textarea></div>
+        <div><label for="a3">3.</label></div>
+        <div><textarea id="a3" rows="3" placeholder="Are you coming with me? asked Jake No I’m too busy replied Sam"></textarea></div>
+      </div>
+
+      <details>
+        <summary>Show model answers</summary>
+        <div class="line"></div>
+        <ol>
+          <li>Jake said, “What’s your name?”</li>
+          <li>“I don’t know,” said Sam.</li>
+          <li>
+            “Are you coming with me?” asked Jake.<br/>
+            “No, I’m too busy,” replied Sam.
+          </li>
+        </ol>
+      </details>
+    </section>
+
+    <section id="partC">
+      <h2>Part C — Add the Missing Punctuation</h2>
+      <p>Add quotation marks, commas, and capital letters where needed.</p>
+      <div class="grid grid-2">
+        <div><label for="b1">1.</label></div>
+        <div><textarea id="b1" rows="2" placeholder="i can’t believe this said sam"></textarea></div>
+        <div><label for="b2">2.</label></div>
+        <div><textarea id="b2" rows="2" placeholder="do you want to play asked jake"></textarea></div>
+        <div><label for="b3">3.</label></div>
+        <div><textarea id="b3" rows="3" placeholder="that’s a great idea replied sam lets do it"></textarea></div>
+      </div>
+      <details>
+        <summary>Show model answers</summary>
+        <div class="line"></div>
+        <ol>
+          <li>“I can’t believe this,” said Sam.</li>
+          <li>“Do you want to play?” asked Jake.</li>
+          <li>“That’s a great idea,” replied Sam. “Let’s do it.”</li>
+        </ol>
+      </details>
+    </section>
+
+    <section id="partD">
+      <h2>Part D — Write Your Own Extended Dialogue <span class="badge">≥ 5 exchanges</span></h2>
+      <p>Create a short scene that moves your story forward. Aim for five back‑and‑forth exchanges (A ↔ B). Start a new line for each new speaker.</p>
+
+      <div class="exchanges" id="exchanges"></div>
+      <div class="flex" style="margin-top:8px">
+        <button id="addExchange">＋ Add exchange</button>
+        <span class="muted">Exchanges: <span id="exCount" class="counter">0</span></span>
+      </div>
+
+      <p class="note" style="margin-top:12px">Challenge: Mix in actions instead of always using “said”. For example: <em>Sam shrugged. “Maybe later.”</em></p>
+    </section>
+
+    <!-- NEW: Formatting guide section -->
+    <section id="formatting">
+      <h2>Formatting Guide — Dialogue in Narratives</h2>
+      <p>Use this as a quick reference while you write. Examples use double quotation marks; if your school prefers single quotation marks, use them consistently.</p>
+      <div class="pair">
+        <div>
+          <h3 class="small">1) Basic tag at the end</h3>
+          <p>“Let’s go,” <em>said Ava</em>.</p>
+        </div>
+        <div>
+          <h3 class="small">2) Tag at the start</h3>
+          <p><em>Ava said,</em> “Let’s go.”</p>
+        </div>
+        <div>
+          <h3 class="small">3) Tag in the middle</h3>
+          <p>“Let’s,” <em>said Ava,</em> “go.”</p>
+        </div>
+        <div>
+          <h3 class="small">4) Question / exclamation</h3>
+          <p>“Are you ready?” <em>asked Jay</em>. “Hurry up!” <em>he shouted</em>.</p>
+        </div>
+        <div>
+          <h3 class="small">5) Action beats (no “said”)</h3>
+          <p>Ava <em>shrugged</em>. “Maybe later.”</p>
+        </div>
+        <div>
+          <h3 class="small">6) Same speaker continues</h3>
+          <p>“It’s late.” Jay rubbed his eyes. “We should head back.”</p>
+        </div>
+        <div>
+          <h3 class="small">7) New paragraph = new speaker</h3>
+          <p>“I’m in,” said Ava.<br>“Great,” replied Jay.</p>
+        </div>
+        <div>
+          <h3 class="small">8) Interrupted speech</h3>
+          <p>“Wait—don’t open—” The door slammed.</p>
+        </div>
+        <div>
+          <h3 class="small">9) Trailing off</h3>
+          <p>“I thought you said…”</p>
+        </div>
+        <div>
+          <h3 class="small">10) Quotation inside dialogue</h3>
+          <p>“Mr Lee said, <span class="muted">‘Hand it in by Friday.’</span>”</p>
+        </div>
+      </div>
+      <details style="margin-top:12px">
+        <summary>Formatting checklist</summary>
+        <ul>
+          <li>Punctuation sits <strong>inside</strong> the quotation marks.</li>
+          <li>Dialogue tags like <em>said/asked/replied</em> are lowercase unless they begin a sentence.</li>
+          <li>Capitalize the first word inside the quotes if it starts a new sentence.</li>
+          <li>Use an em dash (—) for interruptions; use ellipses (…) for trailing off.</li>
+          <li>Be consistent with single vs double quotation marks (your school style).</li>
+        </ul>
+      </details>
+    </section>
+
+    <!-- NEW: Apply formatting section -->
+    <section id="partD">
+      <h2>Part D — Apply Formatting to a Story Paragraph</h2>
+      <p>Turn the messy paragraph below into correctly formatted dialogue and narration. Add new lines for each speaker, punctuation inside the quotes, and clear tags/actions.</p>
+      <textarea id="dPrompt" rows="5" readonly>ava said i think we’re lost jay where are we going he looked around the dark path i thought you knew he said no but if we follow the fence maybe we’ll find the gate she replied want to turn back he asked</textarea>
+      <p class="note">Rewrite below:</p>
+      <textarea id="dAnswer" rows="8" placeholder="Type your neatly formatted version here…"></textarea>
+      <details>
+        <summary>Show one possible answer</summary>
+        <div class="line"></div>
+        <p>
+          “I think we’re lost,” said Ava. “Jay, where are we going?”<br>
+          Jay looked along the dark path. “I thought you knew.”<br>
+          “No, but if we follow the fence, maybe we’ll find the gate,” she replied.<br>
+          “Do you want to turn back?” he asked.
+        </p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Teacher Check</h2>
+      <ul>
+        <li>New line for each new speaker</li>
+        <li>Correct punctuation inside quotation marks</li>
+        <li>Dialogue tags/actions make the speaker clear</li>
+        <li>Dialogue develops character or advances the plot</li>
+      </ul>
+    </section>
+
+    <p class="foot">© 2025 • Dialogue Worksheet (Web) • Prints cleanly via <strong>🖨️ Print</strong></p>
+  </main>
+
+  <script>
+    (function(){
+      const $ = (sel, el=document)=>el.querySelector(sel);
+      const $$ = (sel, el=document)=>Array.from(el.querySelectorAll(sel));
+      const status = $('#status');
+      const KEY = 'yr7-dialogue-worksheet-v1';
+
+      // Actions
+      $('#printBtn').addEventListener('click', ()=>window.print());
+      $('#saveBtn').addEventListener('click', ()=>{
+        const data = collect();
+        try{
+          localStorage.setItem(KEY, JSON.stringify(data));
+          speak('Saved');
+        }catch(e){ speak('Could not save. Storage may be full.'); }
+      });
+      $('#loadBtn').addEventListener('click', ()=>{
+        try{
+          const raw = localStorage.getItem(KEY);
+          if(!raw){ speak('No saved work found.'); return; }
+          const data = JSON.parse(raw);
+          apply(data);
+          speak('Loaded');
+        }catch(e){ speak('Could not load.'); }
+      });
+      $('#clearBtn').addEventListener('click', ()=>{
+        if(confirm('Clear all fields?')){
+          $$('textarea').forEach(t=>t.value='');
+          $('#exchanges').innerHTML='';
+          exchangeCount=0; updateCount();
+          speak('Cleared');
+        }
+      });
+
+      function speak(msg){ status.textContent = msg; setTimeout(()=>status.textContent='', 3000); }
+
+      // Part D dynamic exchanges
+      const exWrap = $('#exchanges');
+      const exBtn = $('#addExchange');
+      let exchangeCount = 0;
+      function addExchange(initialA='', initialB=''){
+        const rowA = document.createElement('div');
+        rowA.className='ex-row';
+        rowA.innerHTML = '<label>Speaker A</label><textarea rows="2" placeholder="\"…\" said A."></textarea>';
+        rowA.querySelector('textarea').value = initialA;
+        const rowB = document.createElement('div');
+        rowB.className='ex-row';
+        rowB.innerHTML = '<label>Speaker B</label><textarea rows="2" placeholder="\"…\" replied B."></textarea>';
+        rowB.querySelector('textarea').value = initialB;
+        exWrap.appendChild(rowA); exWrap.appendChild(rowB);
+        exchangeCount++; updateCount();
+      }
+      function updateCount(){ $('#exCount').textContent = exchangeCount; }
+      exBtn.addEventListener('click', ()=> addExchange());
+
+      // Seed with 5 exchanges to scaffold
+      for(let i=0;i<5;i++) addExchange();
+
+      // Persistence helpers
+      function collect(){
+        return {
+          a1: $('#a1').value, a2: $('#a2').value, a3: $('#a3').value,
+          b1: $('#b1').value, b2: $('#b2').value, b3: $('#b3').value,
+          exchanges: $$('#exchanges textarea').map(t=>t.value)
+        };
+      }
+      function apply(data){
+        $('#a1').value=data.a1||''; $('#a2').value=data.a2||''; $('#a3').value=data.a3||'';
+        $('#b1').value=data.b1||''; $('#b2').value=data.b2||''; $('#b3').value=data.b3||'';
+        // rebuild exchanges
+        $('#exchanges').innerHTML=''; exchangeCount=0;
+        if(Array.isArray(data.exchanges) && data.exchanges.length){
+          for(let i=0;i<data.exchanges.length;i+=2){
+            const A = data.exchanges[i]||''; const B = data.exchanges[i+1]||'';
+            addExchange(A,B);
+          }
+        } else {
+          for(let i=0;i<5;i++) addExchange();
+        }
+        updateCount();
+      }
+
+      // Auto-save on input (lightweight)
+      document.addEventListener('input', ()=>{
+        const data = collect();
+        try{ localStorage.setItem(KEY, JSON.stringify(data)); }catch(e){}
+      });
+    })();
+  </script>
+</body>
+</html>
